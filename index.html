@@ -1,0 +1,59 @@
+<!DOCTYPLE HTML>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <main id="quiz">
+            <h1>Javascript quiz</h1>
+            <fieldset>
+                <legend>1) The keyword <i>let</i> is used to define variables of which of the following types?</legend>
+                <input id="answer1" type="radio" name="let_keyword" onclick="correct_ans1()"/><label for="global">Global variable</label><br>
+                <input id="const" type="radio" name="let_keyword" onclick="wrong_ans1()" /><label for="const">Constant variable</label><br>
+                <input id="null" type="radio" name="let_keyword" onclick="wrong_ans1()" /><label for="null">Null variable</label><br>
+                <input id="empty" type="radio" name="let_keyword" onclick="wrong_ans1()" /><label for="empty">Empty variable</label><br>
+                <input id="invisible" type="radio" name="let_keyword" onclick="wrong_ans1()" checked="true" /><label for="invisible"></label><br>
+            </fieldset>
+<span id="result"></span><br>
+<fieldset>
+                <legend>2) The keyword <i>const</i> is used to define variables of which of the following types?</legend>
+                <input id="global" type="radio" name="const_keyword" onclick="wrong_ans2()" /><label for="global">Global variable</label><br>
+                <input id="answer2" type="radio" name="const_keyword" onclick="correct_ans2()" /><label for="answer2">Constant variable</label><br>
+                <input id="null" type="radio" name="const_keyword" onclick="wrong_ans2()" /><label for="null">Null variable</label><br>
+                <input id="empty" type="radio" name="const_keyword" onclick="wrong_ans2()" /><label for="empty">Empty variable</label><br>
+                <input id="invisible1" type="radio" name="const_keyword" onclick="wrong_ans2()" checked="true" /><label for="invisible"></label><br>
+            </fieldset>
+<span id="result1"></span><br>
+<fieldset>
+                <legend>3) A variable is defined as, <i>let a = null</i>. The variable <i>a</i> is then said be which of the following types? </legend>
+                <input id="global" type="radio" name="null_keyword" onclick="wrong_ans3()" /><label for="global">Global variable</label><br>
+                <input id="answer2" type="radio" name="null_keyword" onclick="wrong_ans3()" /><label for="answer2">Constant variable</label><br>
+                <input id="null" type="radio" name="null_keyword" onclick="correct_ans3()" /><label for="null">Null variable</label><br>
+                <input id="empty" type="radio" name="null_keyword" onclick="wrong_ans3()" /><label for="empty">Empty variable</label><br>
+                <input id="invisible2" type="radio" name="null_keyword" onclick="wrong_ans3()" checked="true" /><label for="invisible"></label><br>
+            </fieldset>
+<span id="result2"></span><br>
+<fieldset>
+                <legend>4) A variable is defined as, <i>let a = ""</i>. The variable <i>a</i> is then said be which of the following types? </legend>
+                <input id="global" type="radio" name="empty_keyword" onclick="wrong_ans4()" /><label for="global">Global variable</label><br>
+                <input id="answer2" type="radio" name="empty_keyword" onclick="wrong_ans4()" /><label for="answer2">Constant variable</label><br>
+                <input id="null" type="radio" name="empty_keyword" onclick="wrong_ans4()" /><label for="null">Null variable</label><br>
+                <input id="empty" type="radio" name="empty_keyword" onclick="correct_ans4()" /><label for="empty">Empty variable</label><br>
+                <input id="invisible3" type="radio" name="empty_keyword" onclick="wrong_ans4()" checked="true" /><label for="invisible"></label><br>
+            </fieldset>
+<span id="result3"></span><br>
+            <fieldset id = "fs_pg1">
+                <legend>5) The variables defined with <i>const</i> keyword cannot be changed.</legend>
+                <input id="true" type="radio" name="const1_keyword" onclick="correct_ans5()" /><label for="true">True</label><br>
+                <input id="false" type="radio" name="const1_keyword" onclick="wrong_ans5()" /><label for="false">False</label><br>
+                <input id="invisible4" type="radio" name="const1_keyword" onclick="wrong_ans4()" checked="true" /><label for="invisible"></label><br>
+            </fieldset>
+
+<span id="result4"></span><br>
+<p id="score"></p>
+        </main>
+        <footer>
+        </footer>
+        <script src="index.js"></script>
+    </body>
+</html>
